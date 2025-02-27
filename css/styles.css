@@ -1162,3 +1162,62 @@ img {
         grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
     }
 }
+.trabajos1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.cliente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cliente img {
+    max-width: 250px;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.cliente img:hover {
+    filter: none;
+}
+
+.cliente-carousel {
+    display: none; /* Ocultar por defecto */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cliente-carousel img {
+    max-width: 150px;
+    height: auto;
+}
+
+.carousel-controls {
+    margin-top: 10px;
+}
+
+.carousel-controls a {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Media Query para pantallas móviles */
+@media (max-width: 768px) {
+    .cliente {
+        display: none; /* Ocultar la versión horizontal */
+    }
+
+    .cliente-carousel {
+        display: block; /* Mostrar el carrusel simulado */
+    }
+}
