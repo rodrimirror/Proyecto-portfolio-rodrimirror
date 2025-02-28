@@ -247,7 +247,6 @@ nav a:hover {
 
 .soydg {
     display: flex;
-    align-items: center;
     justify-content: center;
     min-height: 100vh;
     padding: 100px;
@@ -257,15 +256,12 @@ nav a:hover {
 
 .soydg-content {
     display: flex;
-    align-items: center;
     flex-direction: column;
     text-align: center;
 }
 
 .texto-destacado {
-    font-size: 3rem;
-    margin: 0 auto;
-    max-width: 90%;
+    margin-top: calc(25vh - 50px); /* Ajusta los valores según sea necesario */
 }
 
 .texto-destacado span {
@@ -276,7 +272,7 @@ nav a:hover {
 @media (min-width: 1441px) and (max-width: 1920px) {
     .texto-destacado {
         font-size: 4rem;
-        align-items: baseline;
+        margin-top: calc(30vh - 70px); /* Ajusta los valores según sea necesario */
     }
 }
 
@@ -284,11 +280,11 @@ nav a:hover {
 @media (max-width: 768px) {
     .soydg {
         padding: 50px;
-        align-items: baseline;
     }
 
     .texto-destacado {
         font-size: 2rem;
+        margin-top: calc(15vh - 30px); /* Ajusta los valores según sea necesario */
     }
 }
 
@@ -333,6 +329,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 .contenido-servicio h3 {
@@ -350,7 +347,7 @@ nav a:hover {
 }
 
 .contenedor-boton {
-    width: fit-content;
+
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -1558,5 +1555,120 @@ body {
 
     .cliente-carousel {
         display: block; /* Mostrar el carrusel en móviles */
+    }
+}
+
+.servicios {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.servicios h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.contenedor-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.servicio1,
+.servicio2 {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.servicio1 {
+    flex-direction: row-reverse;
+}
+
+.servicio1 img,
+.servicio2 img {
+    max-width: 450px;
+    height: auto;
+    margin: 0 20px;
+}
+
+.contenido-servicio {
+    flex: 1;
+}
+
+.contenido-servicio h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contenido-servicio p {
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.contenedor-boton {
+    text-align: left;
+}
+
+.botonesproyectos {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.botonesproyectos:hover {
+    background-color: #333;
+}
+
+/* Media Query para pantallas móviles */
+@media (max-width: 768px) {
+    .contenedor-servicios {
+        flex-direction: column; /* Cambiar a columna en móviles */
+    }
+
+    .servicio1,
+    .servicio2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 100%; /* Permitir que los servicios ocupen todo el ancho en móviles */
+    }
+
+    .servicio1 img,
+    .servicio2 img {
+        margin: 0 0 20px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .contenido-servicio h3 {
+        font-size: 1.2rem;
+    }
+
+    .contenido-servicio p {
+        font-size: 1rem;
+        text-align: justify;
+        min-width: 290px;
+    }
+
+    .contenedor-boton {
+        text-align: center;
+
+    }
+
+    .botonesproyectos {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        
     }
 }
