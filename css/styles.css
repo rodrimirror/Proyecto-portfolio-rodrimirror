@@ -932,7 +932,7 @@ nav li {
 
 @media (max-width: 576px) {
     .contenedor-galeria {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit);
     }
 }
 
@@ -1097,18 +1097,18 @@ img {
     align-items: center;
     width: 100%;
     justify-content: center;
-    flex-wrap: wrap; /* Añadido para responsividad */
+    flex-wrap: wrap; 
 }
 
 .titleproyect {
     margin: 10px;
     text-align: left;
-    width: 100%; /* Añadido para responsividad */
+    width: 100%; 
 }
 
 .espacio-vacio {
-    width: 100%; /* Añadido para responsividad */
-    height: 20px; /* Añadido para responsividad */
+    width: 100%; 
+    height: 20px; 
 }
 
 .descripcion {
@@ -1265,21 +1265,21 @@ img {
     }
 
     .texto-bienvenida {
-        text-align: center; /* Centrar el texto en móviles */
+        text-align: center; 
     }
 
     .texto-bienvenida h2 {
-        font-size: 1.8rem; /* Escalar el tamaño tipográfico del título */
+        font-size: 1.8rem; 
     }
 
     .parrafosobremi {
-        font-size: 1rem; /* Escalar el tamaño tipográfico del párrafo */
-        text-align: center; /* Justificar el texto en móviles */
+        font-size: 1rem; 
+        text-align: center; 
     }
 
 }
 
-/* Estilos generales (mantener igual) */
+
 body {
     font-family: 'Work Sans', sans-serif;
     color: #fff;
@@ -1291,7 +1291,6 @@ body {
     justify-content: right;
 }
 
-/* ... (resto de los estilos generales) ... */
 
 /* Estilos para la sección "Sobre mí" ////////////////////////////////////////////// */
 .seccion-bienvenida {
@@ -1345,28 +1344,28 @@ body {
     gap: 10px;
 }
 
-/* Media Query para pantallas móviles */
+/* Media Query Bienvenida sobre mi ///////////////////////////////// */
 @media (max-width: 768px) {
     .contenido-bienvenida {
-        flex-direction: column; /* Apilar elementos verticalmente */
-        align-items: center; /* Centrar elementos en móviles */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .parrafosobremi {
-        font-size: 1.5rem; /* Ajustar tamaño de fuente */
-        max-width: 90%; /* Ajustar ancho máximo */
-        margin: 20px auto; /* Centrar y ajustar margen */
-        text-align: center; /* Centrar texto */
+        font-size: 1.5rem; 
+        max-width: 90%; 
+        margin: 20px auto; 
+        text-align: center; 
     }
 
     .contenedor-imagenes {
-        margin: 20px auto; /* Centrar y ajustar margen */
+        margin: 20px auto; 
     }
 
     .imagen-izquierda,
     .imagen-individual {
-        width: 200px; /* Reducir ancho */
-        height: 300px; /* Reducir altura */
+        width: 200px; 
+        height: 300px; 
     }
 }
 /* Estilo para la sección Blog /////////////////////////////////////////////////////// */
@@ -1523,7 +1522,7 @@ body {
 }
 
 .cliente-carousel {
-    display: none; /* Oculto por defecto */
+    display: none; 
     text-align: center;
     margin-top: 20px;
 }
@@ -1547,14 +1546,14 @@ body {
     text-decoration: none;
 }
 
-/* Media Query para pantallas móviles */
+/* Media Query Clientes marcas ////////////////// */
 @media (max-width: 768px) {
     .cliente {
-        display: none; /* Ocultar la versión de escritorio/notebook */
+        display: none; 
     }
 
     .cliente-carousel {
-        display: block; /* Mostrar el carrusel en móviles */
+        display: block; 
     }
 }
 
@@ -1630,10 +1629,10 @@ body {
     background-color: #333;
 }
 
-/* Media Query para pantallas móviles */
+/* Media Query Servicios ///////////////////////////////// */
 @media (max-width: 768px) {
     .contenedor-servicios {
-        flex-direction: column; /* Cambiar a columna en móviles */
+        flex-direction: column; 
     }
 
     .servicio1,
@@ -1641,7 +1640,7 @@ body {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        max-width: 100%; /* Permitir que los servicios ocupen todo el ancho en móviles */
+        max-width: 100%; 
     }
 
     .servicio1 img,
