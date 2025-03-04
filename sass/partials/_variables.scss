@@ -1,0 +1,25 @@
+$verde: #48AE8B;
+$font: 'Work Sans', sans-serif;
+$color-principal: #48AE8B;
+$color-secundario: #000000;
+$color-texto: #696969;
+$color-blanco: #ffffff;
+$color-hover: #48AE8B;
+$color-hover2: #494949;
+
+@mixin enlace-estilo($color, $hover-color) {
+    color: $color;
+    text-decoration: none;
+
+    &:hover {
+        color: $hover-color;
+    }
+}
+
+
+//extend //
+
+// mixin //
+
+
+//mixin ejemplos: @mixin size ($ancho,$alto) width: $ancho; height: $alto // 
