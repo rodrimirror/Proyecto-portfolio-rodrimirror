@@ -1,0 +1,42 @@
+
+footer {
+    .textfooter {
+        margin-top: 15pt;
+        text-align: center;
+        color: #696969;
+
+        h2 {
+            span {
+                font-weight: bold;
+            }
+        }
+
+        .social-icons {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+
+            li {
+                margin: 0 10px;
+
+                a {
+                    color: #fff;
+                    font-size: 24px;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: #48AE8B;
+                    }
+                }
+            }
+        }
+
+        .copyright {
+            font-size: 14px;
+            color: #888;
+            margin-top: 10px;
+        }
+    }
+}

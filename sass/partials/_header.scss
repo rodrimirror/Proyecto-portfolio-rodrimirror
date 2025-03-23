@@ -1,0 +1,38 @@
+
+header {
+    font-family: 'Work Sans', sans-serif;
+    text-align: left;
+    padding: 1rem;
+    font-size: 1rem;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+
+        .logo img {
+            max-height: 50px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+
+            li {
+                margin-left: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: inherit;
+
+                    &:hover {
+                        color: #48AE8B;
+                    }
+                }
+            }
+        }
+    }
+}
